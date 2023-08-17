@@ -1,0 +1,130 @@
+﻿@* @model IEnumerable<Machine> *@
+@model MachineLayoutViewModel
+
+@{
+    ViewData["Title"] = "Machine";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<br />
+<div class="text-center">
+    <h1>Machine List</h1>
+</div>
+<br />
+<hr />
+<br />
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-12">
+            <a class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#createModal">
+                Add New Machine
+            </a>
+            <table class="table table-hover">
+                <thead>
+                    <tr class="text-center">
+                        <th scope="col">#</th>
+                        <th scope="col">O_Id</th>
+                        <th scope="col">Code</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Layout Id</th>
+                        <th scope="col">Width</th>
+                        <th scope="col">Height</th>
+                        <th scope="col">PositionX</th>
+                        <th scope="col">PositionY</th>
+                        <th scope="col">RunningStatus</th>
+                        <th scope="col">Info 1</th>
+                        <th scope="col">Info 2</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        int rowNumber = 1; // Initialisation de la variable d'incrémentation
+                    }
+                    @foreach (var item in Model.ListOfMachines)
+                    {
+                        @* Layout layout = context.Layouts.FirstOrDefault(l => l == item.Layout); *@
+                        <tr class="text-center">
+                            <td scope="row">@rowNumber</td>
+                            <td scope="row">@item.Oid</td>
+                            <td>@item.Code</td>
+                            <td>@item.Name</td>
+                            <td>@item.LayoutOid</td>
+                            <td>@item.Width</td>
+                            <td>@item.Height</td>
+                            <td>@item.PositionX</td>
+                            <td>@item.PositionY</td>
+                            <td>@item.RunningStatus</td>
+                            <td>@item.Info1</td>
+                            <td>@item.Info2</td>
+                            <td class="d-flex align-items-center justify-content-center">
+                                <a data-machine-id="@item.Oid" class="btn btn-outline-primary m-2" data-bs-toggle="modal" data-bs-target="#editModal">
+                                    Update
+                                </a>
+
+                                <a data-machine-id="@item.Oid" class="btn btn-outline-danger m-2" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                    Delete
+                                </a>
+
+                                <button data-machine-id="@item.Oid" class="btn btn-outline-info m-2" data-bs-toggle="modal" data-bs-target="#showModal">
+                                    Show
+                                </button>
+                            </td>
+                        </tr>
+
+                        rowNumber++; // Incrémentation pour la prochaine ligne
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+@* For Machine *@
+@Html.Partial("CreateModal",Model)
+
+<div id="deleteModalContainer"></div>
+<script>
+    $(document).ready(function () {
+        $(".btn-outline-danger").click(function () {
+            const machineId = $(this).data("machine-id");
+            $("#deleteModalContainer").load("/Machine/DeleteModal?id=" + machineId, function () {
+                $("#deleteModal").modal("show");
+            });
+        });
+    });
+</script>
+
+<div id="editModalContainer"></div>
+<script>
+    $(document).ready(function () {
+        $(".btn-outline-primary").click(function () {
+            const machineId = $(this).data("machine-id");
+            $("#editModalContainer").load("/Machine/EditModal?id=" + machineId, function () {
+                $("#editModal").modal("show");
+            });
+        });
+    });
+</script>
+
+<div id="showModalContainer"></div>
+<script>
+    $(document).ready(function () {
+        $(".btn-outline-info").click(function () {
+            const machineId = $(this).data("machine-id");
+            $("#showModalContainer").load("/Machine/ShowModal?id=" + machineId, function () {
+                $("#showModal").modal("show");
+            });
+        });
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<br />
+<br />
+<br />

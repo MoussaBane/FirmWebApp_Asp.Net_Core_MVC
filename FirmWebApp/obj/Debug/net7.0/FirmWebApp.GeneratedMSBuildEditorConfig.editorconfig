@@ -1,0 +1,77 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = FirmWebApp
+build_property.RootNamespace = FirmWebApp
+build_property.ProjectDir = C:\Users\banem\OneDrive\Bureau\.Net Core With Blazor Projects\FirmWebApp\FirmWebApp\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\banem\OneDrive\Bureau\.Net Core With Blazor Projects\FirmWebApp\FirmWebApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/banem/OneDrive/Bureau/.Net Core With Blazor Projects/FirmWebApp/FirmWebApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/banem/OneDrive/Bureau/.Net Core With Blazor Projects/FirmWebApp/FirmWebApp/Views/Layout/CreateModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0XENyZWF0ZU1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/banem/OneDrive/Bureau/.Net Core With Blazor Projects/FirmWebApp/FirmWebApp/Views/Layout/DeleteModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0XERlbGV0ZU1vZGFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/banem/OneDrive/Bureau/.Net Core With Blazor Projects/FirmWebApp/FirmWebApp/Views/Layout/EditModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0XEVkaXRNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/banem/OneDrive/Bureau/.Net Core With Blazor Projects/FirmWebApp/FirmWebApp/Views/Layout/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGF5b3V0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/banem/OneDrive/Bureau/.Net Core With Blazor Projects/FirmWebApp/FirmWebApp/Views/Machine/CreateModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFjaGluZVxDcmVhdGVNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/banem/OneDrive/Bureau/.Net Core With Blazor Projects/FirmWebApp/FirmWebApp/Views/Machine/DeleteModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFjaGluZVxEZWxldGVNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/banem/OneDrive/Bureau/.Net Core With Blazor Projects/FirmWebApp/FirmWebApp/Views/Machine/EditModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFjaGluZVxFZGl0TW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/banem/OneDrive/Bureau/.Net Core With Blazor Projects/FirmWebApp/FirmWebApp/Views/Machine/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFjaGluZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/banem/OneDrive/Bureau/.Net Core With Blazor Projects/FirmWebApp/FirmWebApp/Views/Machine/ShowModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFjaGluZVxTaG93TW9kYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/banem/OneDrive/Bureau/.Net Core With Blazor Projects/FirmWebApp/FirmWebApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/banem/OneDrive/Bureau/.Net Core With Blazor Projects/FirmWebApp/FirmWebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/banem/OneDrive/Bureau/.Net Core With Blazor Projects/FirmWebApp/FirmWebApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/banem/OneDrive/Bureau/.Net Core With Blazor Projects/FirmWebApp/FirmWebApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/banem/OneDrive/Bureau/.Net Core With Blazor Projects/FirmWebApp/FirmWebApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-yzdjk1kqvl
