@@ -38,6 +38,15 @@
     }
 </script>
 
+@* @(Html.DevExtreme().Chart()
+    .DataSource(Model)
+    .Series(s => s
+        .Add()
+        .ArgumentField(Model.Name)
+        .ValueField(Model.LayoutId)
+    )
+) *@
+
 
 
 
