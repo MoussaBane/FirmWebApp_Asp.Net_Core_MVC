@@ -1,4 +1,6 @@
 ﻿@model IEnumerable<Layout>
+@using System.Linq
+@using Microsoft.AspNetCore
 
 @{
     ViewData["Title"] = "Layout";
@@ -52,10 +54,13 @@
                                 <a data-layout-id="@item.Oid" class="btn btn-outline-danger m-2" data-bs-toggle="modal" data-bs-target="#deleteModal">
                                     Delete
                                 </a>
-                                
-                                <button class="btn btn-outline-info m-2">
+
+                                <a href="@Url.Action("ShowLayoutScreen", "Layout", new { layoutId = item.Oid })" class="btn btn-outline-info m-2">
                                     Show
-                                </button>
+                                </a>
+                                @* <button data-layout-id="@item.Oid" class="btn btn-outline-info m-2 show-button">
+                                    Show
+                                </button> *@
                             </td> 
                         </tr>
                         
@@ -68,9 +73,10 @@
 </div>
 
 
-@* For Layout *@
+@* For Create *@
 @Html.Partial("CreateModal",new Layout())
 
+@* For Delete *@
 <div id="deleteModalContainer"></div>
 <script>
     $(document).ready(function () {
@@ -83,6 +89,7 @@
     });
 </script>
 
+@* For Edit/Update *@
 <div id="editModalContainer"></div>
 <script>
     $(document).ready(function () {
@@ -94,6 +101,90 @@
         });
     });
 </script>
+
+
+
+
+@* For Read/Show *@
+
+
+
+
+
+
+
+
+@* The Model is not accessible in the javascript code that's one way to make done this   *@
+@* var layoutData = @Html.Raw(Json.Serialize(Model)); // Serialize the Model data as JSON *@
+@* <div id="diagramContainer"></div> *@
+
+@* <script>
+    var viewModel = layoutData.Select(layout => ({
+        Oid: layout.Oid,
+        Name: layout.Name,
+        Width: layout.Width,
+        Height: layout.Height,
+        Machines: layout.Machines.Select(machine => ({
+            Id: machine.Oid,
+            Width: machine.Width,
+            Height: machine.Height,
+            PositionX: machine.PositionX,
+            PositionY: machine.PositionY,
+            RunningStatus: machine.RunningStatus,
+            Name: machine.Name,
+            Info1: machine.Info1,
+            Info2: machine.Info2
+        })).ToList()
+    })).ToList();
+
+    $(document).ready(function () {
+        $(".show-button").click(function () {
+            const targetLayoutOid = $(this).data("layout-id");
+            const targetLayout = viewModel.find(layout => layout.Oid === targetLayoutOid);
+
+            if (targetLayout) {
+                const layoutWidth = targetLayout.Width;
+                const layoutHeight = targetLayout.Height;
+                const machines = targetLayout.Machines;
+
+                const diagramContainer = document.getElementById("diagramContainer");
+                const diagramOptions = {
+                    width: layoutWidth,
+                    height: layoutHeight,
+                    nodes: machines.map(machine => ({
+                        id: machine.Id.toString(),
+                        width: machine.Width,
+                        height: machine.Height,
+                        x: machine.PositionX,
+                        y: machine.PositionY,
+                        type: "rectangle",
+                        style: {
+                            fill: (function () {
+                                if (machine.RunningStatus) {
+                                    return "green";
+                                } else {
+                                    return "red";
+                                }
+                            })()
+                        },
+                        title: `${machine.Name}\n${machine.Info1}\n${machine.Info2}`
+                    })),
+                    edges: [],
+                    contextMenuEnabled: false
+                };
+
+                diagramContainer.innerHTML = ""; // Clear existing content
+                const diagram = new DevExpress.ui.dxDiagram(diagramContainer, diagramOptions);
+            } else {
+                console.log("No Layout With The Specified Oid Found.");
+            }
+        });
+    });
+</script> *@
+
+
+
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>

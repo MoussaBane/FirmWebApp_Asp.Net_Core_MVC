@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddJsonOptions(options => options.JsonSerializerOptions.PropertyNamingPolicy = null);
 builder.Services.AddScoped<ILayoutRepository, LayoutRepository>();
 builder.Services.AddScoped<IMachineRepository, MachineRepository>();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>

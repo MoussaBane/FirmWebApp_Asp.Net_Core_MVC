@@ -10,5 +10,7 @@ namespace FirmWebApp.Models
         public string Name { get; set; }
         public double Width { get; set; }
         public double Height { get; set; }
+
+        /*public List<Machine>? Machines { get; set; }*/
     }
 }

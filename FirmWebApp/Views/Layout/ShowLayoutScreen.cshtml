@@ -1,0 +1,43 @@
+﻿@* @using DevExtreme.AspNet.Mvc.Builders.DiagramNodesBuilder; *@
+@model IEnumerable<Machine>
+
+
+@(Html.DevExtreme().Diagram()
+    .Nodes(nodes =>
+    {
+        foreach (var machine in Model)
+        {
+            nodes.Add(new DiagramNode @* I Have a problem with the usage of DiagramNode *@
+            {
+                Id = machine.Oid.ToString(),
+                Width = machine.Width,
+                Height = machine.Height,    
+                X = machine.PositionX,
+                Y = machine.PositionY,
+                CssClass = machine.RunningStatus ? "running" : "stopped",
+                Text = machine.Name,
+                CustomData = new { Info1 = machine.Info1, Info2 = machine.Info2 }
+            });
+        }
+    })
+    .OnNodeClick("onNodeClick")
+    .OnCustomItemClick("onCustomItemClick")
+)
+
+<script>
+    // Dikdörtgenlere tıklama işlevi
+    function onNodeClick(e) {
+        // Tıklanan makina hakkında işlemler 
+    }
+
+    // Mouse üzerine gelme işlevi
+    function onCustomItemClick(e) {
+        var info1 = e.itemData.Info1;
+        var info2 = e.itemData.Info2;
+        // Bilgileri görüntülemek için işlemler 
+    }
+</script>
+
+
+
+

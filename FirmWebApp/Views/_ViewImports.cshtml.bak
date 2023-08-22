@@ -1,0 +1,3 @@
+﻿@using FirmWebApp
+@using FirmWebApp.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers

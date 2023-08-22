@@ -15,6 +15,16 @@
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)mindfusion.diagramming.mvc\4.1.1\contentFiles\any\any\wwwroot\js\MindFusion.Diagramming.js" Condition="Exists('$(NuGetPackageRoot)mindfusion.diagramming.mvc\4.1.1\contentFiles\any\any\wwwroot\js\MindFusion.Diagramming.js')">
+      <NuGetPackageId>MindFusion.Diagramming.Mvc</NuGetPackageId>
+      <NuGetPackageVersion>4.1.1</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>wwwroot\js\MindFusion.Diagramming.js</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Content Include="$(NuGetPackageRoot)bootstrap\5.3.1\contentFiles\any\any\wwwroot\css\bootstrap-grid.css" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.1\contentFiles\any\any\wwwroot\css\bootstrap-grid.css')">
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>5.3.1</NuGetPackageVersion>
@@ -371,14 +381,16 @@
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\7.0.10\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\7.0.10\buildTransitive\net6.0\Microsoft.EntityFrameworkCore.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\7.0.10\build\net6.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\7.0.10\build\net6.0\Microsoft.EntityFrameworkCore.Design.props')" />
-    <Import Project="$(NuGetPackageRoot)bootstrapblazor\7.9.1\buildTransitive\BootstrapBlazor.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor\7.9.1\buildTransitive\BootstrapBlazor.props')" />
+    <Import Project="$(NuGetPackageRoot)bootstrapblazor\7.9.2\buildTransitive\BootstrapBlazor.props" Condition="Exists('$(NuGetPackageRoot)bootstrapblazor\7.9.2\buildTransitive\BootstrapBlazor.props')" />
     <Import Project="$(NuGetPackageRoot)blazored.modal\7.1.0\buildTransitive\Blazored.Modal.props" Condition="Exists('$(NuGetPackageRoot)blazored.modal\7.1.0\buildTransitive\Blazored.Modal.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\banem\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.3</PkgMicrosoft_CodeAnalysis_Analyzers>
     <PkgMicrosoft_CodeAnalysis_AnalyzerUtilities Condition=" '$(PkgMicrosoft_CodeAnalysis_AnalyzerUtilities)' == '' ">C:\Users\banem\.nuget\packages\microsoft.codeanalysis.analyzerutilities\3.3.0</PkgMicrosoft_CodeAnalysis_AnalyzerUtilities>
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\banem\.nuget\packages\microsoft.entityframeworkcore.tools\7.0.10</PkgMicrosoft_EntityFrameworkCore_Tools>
+    <PkgjQuery Condition=" '$(PkgjQuery)' == '' ">C:\Users\banem\.nuget\packages\jquery\3.5.1</PkgjQuery>
     <PkgDevExpress_Data Condition=" '$(PkgDevExpress_Data)' == '' ">C:\Program Files\DevExpress 23.1\Components\Offline Packages\devexpress.data\23.1.4</PkgDevExpress_Data>
     <PkgDevExpress_Xpo Condition=" '$(PkgDevExpress_Xpo)' == '' ">C:\Program Files\DevExpress 23.1\Components\Offline Packages\devexpress.xpo\23.1.4</PkgDevExpress_Xpo>
+    <PkgChartJS Condition=" '$(PkgChartJS)' == '' ">C:\Users\banem\.nuget\packages\chartjs\23.1.4</PkgChartJS>
   </PropertyGroup>
 </Project>

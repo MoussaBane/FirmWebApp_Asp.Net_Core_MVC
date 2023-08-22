@@ -21,6 +21,10 @@ namespace FirmWebApp.Controllers
         {
             List<Layout> layouts = _context.Layouts.ToList();
             /*IEnumerable<Layout> layouts = await _layoutRepository.GetAll();*/
+            /*foreach (var layout in layouts)
+            {
+                layout.Machines = _context.Machines.Where(machine => machine.LayoutOid == layout.Oid).ToList();
+            }*/
             return View(layouts);
         }
 
@@ -120,6 +124,15 @@ namespace FirmWebApp.Controllers
             return RedirectToAction(nameof(Index));
         }
 
+        public IActionResult ShowLayoutScreen(int layoutId)
+        {
+            List<Machine> machines = GetMachinesByLayout(layoutId); // Obtenir les machines liées à ce layout
+            return View(machines);
+        }
 
+        public List<Machine> GetMachinesByLayout(int layoutId)
+        {
+            return _context.Machines.Where(machine => machine.LayoutOid == layoutId).ToList();
+        }
     }
 }

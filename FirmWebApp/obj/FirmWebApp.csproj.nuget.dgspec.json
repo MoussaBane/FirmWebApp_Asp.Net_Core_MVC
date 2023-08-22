@@ -18,6 +18,7 @@
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+          "C:\\Users\\banem\\OneDrive\\Bureau\\.Net Core With Blazor Projects\\FirmWebApp\\NuGet.Config",
           "C:\\Users\\banem\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 23.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
@@ -29,6 +30,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\DevExpress 23.1\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files\\DevExpress 23.1\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -54,7 +56,7 @@
             },
             "BootstrapBlazor": {
               "target": "Package",
-              "version": "[7.9.1, )"
+              "version": "[7.9.2, )"
             },
             "BootstrapBlazor.Analyzers": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers",
@@ -62,9 +64,29 @@
               "target": "Package",
               "version": "[1.*, )"
             },
+            "ChartJS": {
+              "target": "Package",
+              "version": "[23.1.4, )"
+            },
+            "DevExpress.Data": {
+              "target": "Package",
+              "version": "[23.1.4, )"
+            },
             "DevExpress.Xpo": {
               "target": "Package",
               "version": "[23.1.4, )"
+            },
+            "DevExtreme.AspNet.Core": {
+              "target": "Package",
+              "version": "[23.1.4, )"
+            },
+            "DevExtreme.AspNet.Data": {
+              "target": "Package",
+              "version": "[2.9.3, )"
+            },
+            "DevExtreme.Library": {
+              "target": "Package",
+              "version": "[17.1.5, )"
             },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
@@ -99,6 +121,14 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[7.0.9, )"
+            },
+            "MindFusion.Diagramming.Mvc": {
+              "target": "Package",
+              "version": "[4.1.1, )"
+            },
+            "MindFusion.Diagramming.WebForms": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "MySql.EntityFrameworkCore": {
               "target": "Package",
