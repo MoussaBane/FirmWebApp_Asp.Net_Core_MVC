@@ -46,3 +46,23 @@ The project includes the following steps:
 
 For more details about the DevExtreme components used in this project, check out the [DevExtreme Documentation](https://js.devexpress.com/Documentation/). You can also find sample codes by exploring DevExtreme's demo applications.
 
+## A Few Project Screenshots
+
+![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/4cd36f7e-6468-4d5a-98f6-b8e094d8f8c2)
+
+![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/85f95d9e-2fb7-4828-ba59-7d81ba6e7652)
+
+![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/85f84111-728e-4f8b-a70a-edd371759fec)
+
+![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/de02e569-d49b-40c3-bc28-e07fd5cd3fb4)
+
+![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/fca0fdb9-b9cd-4aa6-9cf9-a650c7e69ad9)
+
+![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/36691994-4b3c-4f0e-871c-4f455c930381)
+
+![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/a0b64682-d502-475c-8140-494c90eb92aa)
+
+
+
+
+
