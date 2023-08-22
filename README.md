@@ -1,50 +1,50 @@
 # FirmWebApp_Asp.Net_Core_MVC
 
-This project involves creating a .NET Core MVC-based web application and designing a monitoring screen using the DevExtreme library. The monitoring screen allows visual management of test areas in a factory and the test machines located within them.
+This project involves creating a web application based on .NET Core MVC and designing a monitoring screen using the DevExtreme library. The monitoring screen helps visually manage test areas in a factory and the test machines within them.
 
-Machines are positioned within specific layouts and colored based on their operational status.
+Machines are placed in layouts and color-coded based on their operational status.
 
-## Project Contents
+## Project Highlights
 
-The project encompasses the following steps:
+The project includes the following steps:
 
 1. **CRUD Operations and Popup Windows:**
-   - Popup windows have been created to facilitate CRUD operations for Layout and Machine objects. For instance, 2 layouts and 3 machine records in each layout have been generated.
+   - Created popup windows for easy CRUD (Create, Read, Update, Delete) operations on Layout and Machine objects. For example, set up 2 layouts and added 3 machine records to each layout.
 
 2. **Adding the DevExtreme Library:**
-   - A .NET Core-based web application has been set up.
-   - The DevExtreme library has been integrated into the project, offering a rich array of user interface components.
+   - Built a web application using .NET Core.
+   - Incorporated the DevExtreme library to provide powerful user interface components.
 
 3. **Creating Layout and Show Button:**
-   - Layout design has been tailored for the monitoring screen. The "Show" button is employed to unveil the monitoring screen.
+   - Designed layouts for the monitoring screen. Used the "Show" button to access the monitoring screen.
 
 4. **Using the DevExtreme Diagram Component:**
-   - The DevExtreme Diagram component takes center stage in the monitoring screen. This component empowers visual arrangement and display of objects.
+   - Utilized the DevExtreme Diagram component on the monitoring screen. This component enables visual organization and display of objects.
 
 5. **Diagram Resizing:**
-   - The diagram screen dynamically adjusts its dimensions according to the width and height stipulated in the layout object.
+   - Adjusted the diagram screen's size based on the width and height specified in the layout.
 
 6. **Adding Machine Objects:**
-   - Rectangular objects corresponding to each machine record are seamlessly integrated into the relevant layout, respecting specified coordinates and dimensions.
+   - Placed rectangular objects on relevant layouts to represent machine records accurately, including their positions and sizes.
 
 7. **Mouse Hover Functionality:**
-   - Hovering over rectangular objects triggers the display of info1 and info2 fields via the mouse hover feature.
+   - Enabled info1 and info2 fields to appear when hovering over rectangular objects.
 
-8. **Examining DevExtreme Demo Applications:**
-   - By delving into DevExtreme's demo applications, one can glean insights into component utilization and explore example codes.
+8. **Exploring DevExtreme Demo Applications:**
+   - Studied DevExtreme's demo applications to learn about using components and to find example codes.
 
 ## Getting Started
 
 1. Clone or download this project.
 2. Open the project in a .NET Core development environment.
-3. Use NuGet Package Manager to install the required packages.
+3. Use NuGet Package Manager to install required packages.
 4. Compile the project files and launch the application.
-5. Embark on your journey with the monitoring screen by creating layout and machine records.
+5. Begin using the monitoring screen by creating layout and machine records.
 
 ## Learn More
 
-For a deeper dive into the DevExtreme components employed in this project, you can peruse the [DevExtreme Documentation](https://js.devexpress.com/Documentation/). Furthermore, exploration of DevExtreme's demo applications will uncover a wealth of example codes.
+For more details about the DevExtreme components used in this project, check out the [DevExtreme Documentation](https://js.devexpress.com/Documentation/). You can also find sample codes by exploring DevExtreme's demo applications.
 
 ## License
 
-This project is licensed under [License Name]. Please refer to the `LICENSE` file for additional information.
+This project is licensed under [License Name]. Refer to the `LICENSE` file for further information.
