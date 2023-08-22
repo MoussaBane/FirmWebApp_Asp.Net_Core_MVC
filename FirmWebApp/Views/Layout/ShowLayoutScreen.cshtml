@@ -1,17 +1,30 @@
 ﻿@* @using DevExtreme.AspNet.Mvc.Builders.DiagramNodesBuilder; *@
 @model IEnumerable<Machine>
 
+@{
+    ViewData["Title"] = "LayoutScreen";
+}
+
+<br />
+<div class="text-center">
+    <h1>Layout Screen</h1>
+</div>
+
+<br />
+<hr />
+<br />
 
 @(Html.DevExtreme().Diagram()
     .Nodes(nodes =>
     {
+        @* var machines = @Html.Raw(Json.Serialize(Model)); *@
         foreach (var machine in Model)
         {
-            nodes.Add(new DiagramNode @* This part of code generate an error because of DiagramNode. I couldn't fix the error *@
+            nodes.Add(new DiagramNode
             {
                 Id = machine.Oid.ToString(),
                 Width = machine.Width,
-                Height = machine.Height,    
+                Height = machine.Height,
                 X = machine.PositionX,
                 Y = machine.PositionY,
                 CssClass = machine.RunningStatus ? "running" : "stopped",
@@ -38,15 +51,39 @@
     }
 </script>
 
-@* @(Html.DevExtreme().Chart()
-    .DataSource(Model)
-    .Series(s => s
-        .Add()
-        .ArgumentField(Model.Name)
-        .ValueField(Model.LayoutId)
-    )
-) *@
 
 
 
+@* <div id="diagram"></div>
+<script>
+    $(function () {
+        // Your data
+        var modelData = @Html.Raw(Json.Serialize(Model));
 
+        // Initialize the diagram
+        $("#diagram").dxDiagram({
+            nodes: {
+                dataSource: modelData.map(function (machine) {
+                    return {
+                        id: machine.Oid.toString(),
+                        width: machine.Width,
+                        height: machine.Height,
+                        x: machine.PositionX,
+                        y: machine.PositionY,
+                        text: machine.Name,
+                        customData: { Info1: machine.Info1, Info2: machine.Info2 },
+                        cssClass: machine.RunningStatus ? "running" : "stopped"
+                    };
+                }),
+            },
+            onCustomItemClick: function (e) {
+                var customData = e.itemData.customData;
+                // Handle custom item click
+            },
+            onNodeClick: function (e) {
+                var nodeData = e.node;
+                // Handle node click
+            }
+        });
+    });
+</script> *@
