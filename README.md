@@ -1,6 +1,7 @@
 # FirmWebApp_Asp.Net_Core_MVC
 
 Bu projede, .NET Core MVC tabanlı bir web uygulaması oluşturulmuş ve DevExtreme kütüphanesi kullanılarak bir izleme ekranı tasarlanmıştır. Bu izleme ekranı, fabrikadaki test alanlarını ve bu alanlara yerleştirilmiş test makinelerini görsel olarak yönetmenizi sağlar.
+
 Makineler, belirli bir layout içinde konumlandırılmış ve çalışma durumlarına göre renklendirilmiştir.
 
 ## Proje İçeriği
