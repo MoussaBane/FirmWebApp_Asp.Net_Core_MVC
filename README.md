@@ -46,6 +46,3 @@ The project includes the following steps:
 
 For more details about the DevExtreme components used in this project, check out the [DevExtreme Documentation](https://js.devexpress.com/Documentation/). You can also find sample codes by exploring DevExtreme's demo applications.
 
-## License
-
-This project is licensed under [License Name]. Refer to the `LICENSE` file for further information.
