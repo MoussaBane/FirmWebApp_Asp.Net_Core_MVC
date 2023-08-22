@@ -37,9 +37,10 @@ The project includes the following steps:
 
 1. Clone or download this project.
 2. Open the project in a .NET Core development environment.
-3. Use NuGet Package Manager to install required packages.
-4. Compile the project files and launch the application.
-5. Begin using the monitoring screen by creating layout and machine records.
+3. Update the database informations.
+4. Use NuGet Package Manager to install required packages.
+5. Compile the project files and launch the application.
+6. Begin using the monitoring screen by creating layout and machine records.
 
 ## Learn More
 
