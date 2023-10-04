@@ -48,22 +48,16 @@ For more details about the DevExtreme components used in this project, check out
 
 ## A Few Project Screenshots
 
-![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/4cd36f7e-6468-4d5a-98f6-b8e094d8f8c2)
+![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/bdaec9c0-91f8-4887-b8e4-cfa3fda953e0)
 
-![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/85f95d9e-2fb7-4828-ba59-7d81ba6e7652)
+![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/e653cf5f-841c-4a49-b6ca-1936ea494070)
 
-![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/85f84111-728e-4f8b-a70a-edd371759fec)
+![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/2cfa04e5-1e02-4b1c-8124-aeabd4c4e67a)
 
-![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/de02e569-d49b-40c3-bc28-e07fd5cd3fb4)
+![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/b2b5a13c-7548-4040-a4a6-04a480f6e60a)
 
-![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/fca0fdb9-b9cd-4aa6-9cf9-a650c7e69ad9)
+![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/734cf4d7-5e37-47c7-8879-79c4fdcbaf9f)
 
-![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/36691994-4b3c-4f0e-871c-4f455c930381)
-
-![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/a0b64682-d502-475c-8140-494c90eb92aa)
-
-
-
-
+![image](https://github.com/MoussaBane/FirmWebApp_Asp.Net_Core_MVC/assets/75726215/079739ce-4d42-4954-80c2-f83f5ef2c5ac)
 
 
